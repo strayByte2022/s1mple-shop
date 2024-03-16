@@ -4,7 +4,7 @@ import "./globals.css";
 import NavBar from "@/components/layout/navbar";
 import PageFooter from "@/components/layout/footer";
 
-const lato = Lato({ subsets: ['latin-ext'],weight:['400'] });
+const lato = Lato({ subsets: ['latin-ext'], weight: ['400'] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,18 +18,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      
+
       <body className={lato.className}>
         <header>
           <NavBar />
 
         </header>
-        {children}
+        <div className="h-screen">
+          {children}
+        </div>
+
         <footer>
-          <PageFooter/>
+          <PageFooter />
         </footer>
-        </body>
-      
+      </body>
+
     </html>
   );
 }
