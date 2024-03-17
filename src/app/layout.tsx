@@ -24,7 +24,7 @@ export default function RootLayout({
           <NavBar />
 
         </header>
-        <div className="h-screen">
+        <div className="h-fit">
           {children}
         </div>
 

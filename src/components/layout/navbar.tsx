@@ -4,6 +4,7 @@ import React from 'react'
 import { Layout, Menu, Input, Avatar, Typography, Button } from 'antd';
 
 import {ShoppingCartOutlined} from '@ant-design/icons'
+import '@/components/layout/layout.module.css'
 const { Search } = Input
 const { Link } = Typography
 const items = [
@@ -29,10 +30,10 @@ const NavBar = () => {
     console.log('search! ')
   }
   return (
-    <div className='grid grid-cols-3 p-5 border-b-2 items-center'>
+    <div className='grid grid-cols-3 p-5 items-center'>
 
 
-      <div className=' flex w-full items-center justify-between space-x-2'>
+      <div className=' flex w-full items-center justify-between space-x-2' >
 
         <Avatar shape='square' src='logo.png' size={'large'} className='bg-white' />
         <Link strong={true} style={{ color: 'black' }} className='text-2xl' >S1mple Store</Link>
