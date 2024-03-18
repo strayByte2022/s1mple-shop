@@ -1,9 +1,10 @@
 'use client'
-import React from 'react'
-import { Layout, Menu, Input, Avatar, Typography, Button } from 'antd';
+import React, { useState } from 'react'
+import { Layout, Menu, Input, Avatar, Typography, Button, Badge } from 'antd';
 
-import {ShoppingCartOutlined} from '@ant-design/icons'
+import { ShoppingCartOutlined } from '@ant-design/icons'
 import '@/components/layout/layout.module.css'
+import Cart from '../common/Cart';
 const { Search } = Input
 const { Link } = Typography
 const items = [
@@ -18,13 +19,14 @@ const items = [
 
   },
   {
-    key:'automobile',
-    label:'Automobiles'
+    key: 'automobile',
+    label: 'Automobiles'
   }
 
 ]
 
 const NavBar = () => {
+
   const onSearch = () => {
     console.log('search! ')
   }
@@ -49,7 +51,7 @@ const NavBar = () => {
       </div>
       <Search size='large' placeholder="Search product" allowClear onSearch={onSearch} className='w-full' />
       <div className='flex justify-end'>
-        <Button icon={<ShoppingCartOutlined />} size='large'></Button>
+        <Cart/>
       </div>
 
 
