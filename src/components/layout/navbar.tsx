@@ -37,7 +37,7 @@ const NavBar = () => {
       <div className=' flex w-full items-center justify-between space-x-2' >
 
         <Avatar shape='square' src='logo.png' size={'large'} className='bg-white' />
-        <Link strong={true} style={{ color: 'black' }} className='text-2xl uppercase' >S1mple Store</Link>
+        <Link strong={true} style={{ color: 'black' }} className='text-2xl uppercase' href='/'>S1mple Store</Link>
         <Menu
           theme="light"
           mode="horizontal"
