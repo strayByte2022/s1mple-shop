@@ -10,8 +10,8 @@ const MainPage = () => {
   }
   return (
     <div className='flex h-fit'>
-      <div className='w-3/5 flex justify-end'>
-        <Card hoverable className='flex w-4/5 items-center' onClick={handleOnClick}>
+      <div className='w-4/5 flex justify-end'>
+        <Card hoverable className='flex w-full items-center ml-5' onClick={handleOnClick}>
           <Image
             alt=''
             preview={false}

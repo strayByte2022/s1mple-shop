@@ -52,16 +52,18 @@ const PageFooter = () => {
 
         <div className='flex items-center'>
           <Button>
-            CONTACT DEV! 
+            CONTACT DEV!
           </Button>
         </div>
 
 
 
       </div>
-      <div className='p-3'>
-        © {year} Vuong Hong Linh. All rights reserved.
-
+      <div className='ml-4 pt-2 pb-2'>
+        <div>
+          © {year} Vuong Hong Linh. All rights reserved.
+        </div>
+        
 
       </div>
     </div>
