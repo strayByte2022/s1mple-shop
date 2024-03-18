@@ -19,6 +19,7 @@ const MainPage = () => {
             src='https://img.freepik.com/premium-photo/compact-sports-car-family-sedan-3d-illustration_101266-13425.jpg?w=1380' />
 
         </Card>
+        
       </div>
 
       <div className='grid ml-5 space-y-5'>
